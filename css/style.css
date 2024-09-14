@@ -1,4 +1,179 @@
 * {
-    font-family: "Open Sans", sans-serif;
-    box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Navbar initially transparent with no border */
+.navbar {
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: none;
+  z-index: 1000;
+}
+
+/* Background when expanded and shadow */
+.navbar-expanded {
+  background-color: rgba(0, 0, 0, 0.85); /* Slightly darker black */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Brand logo smaller */
+.navbar-brand img {
+  height: 180px; /* Adjust the logo size */
+}
+
+/* Align logo and toggler to the top */
+.navbar .container-fluid {
+  display: flex;
+  align-items: flex-start; /* Aligns logo and toggler to the top */
+  justify-content: space-between;
+}
+
+/* Navbar links style */
+.navbar .nav-link {
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 0.8rem;
+  color: black;
+  transition: color 0.4s ease, background-color 0.4s ease;
+}
+
+/* Navbar links white when expanded */
+.navbar-expanded .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #ccc;
+}
+
+/* Button style for hamburger icon */
+.navbar-toggler {
+  border: none; /* No border */
+  background-color: transparent;
+  padding: 0; /* Remove padding */
+  box-shadow: none;
+  transition: transform 0.3s ease;
+  padding: 1.2rem;
+  margin-top: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+
+/* Bigger Toggler Icon */
+.navbar-toggler .navbar-toggler-icon {
+  width: 3.5rem; /* Bigger icon width */
+  height: 3.5rem; /* Bigger icon height */
+  background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="white" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" d="M1 2.5h14M1 8h14M1 13.5h14"/%3E%3C/svg%3E'); /* Increased stroke width */
+}
+
+/* On hover, give a little smooth zoom effect to the hamburger icon */
+.navbar-toggler:hover {
+  transform: scale(1.1);
+}
+
+.navbar-toggler:focus {
+  border: none;
+  box-shadow: none;
+}
+
+/* Navbar content padding for spacing */
+.navbar-collapse {
+  padding-bottom: 2.2rem;
+}
+
+/* ===================== RESPONSIVE STYLING ===================== */
+
+/* Tablet devices (768px and above) */
+@media (max-width: 991px) {
+  .navbar-brand img {
+    height: 120px; /* Smaller logo for tablets */
+  }
+
+  .navbar .nav-link {
+    font-size: 1.5rem; /* Reduce font size for links */
+  }
+
+  .navbar-toggler {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+  }
+
+  .navbar-toggler .navbar-toggler-icon {
+    width: 2.8rem; /* Slightly smaller toggler for tablets */
+    height: 2.8rem;
+  }
+}
+
+/* Mobile devices (576px and below) */
+@media (max-width: 575px) {
+  .navbar-brand img {
+    height: 80px; /* Even smaller logo for mobile */
+  }
+
+  .navbar .nav-link {
+    font-size: 1.2rem; /* Smaller font for mobile links */
+    padding: 0.6rem;
+  }
+
+  .navbar-toggler {
+    margin-top: 0.8rem;
+    margin-right: 0.8rem;
+    padding: 0.8rem;
+  }
+
+  .navbar-toggler .navbar-toggler-icon {
+    width: 2.2rem; /* Smaller toggler for mobile */
+    height: 2.2rem;
+  }
+}
+
+/* Extra small devices (iPhone 5 and below) */
+@media (max-width: 400px) {
+  .navbar-brand img {
+    height: 60px; /* Adjust logo for smaller screens */
+  }
+
+  .navbar .nav-link {
+    font-size: 1rem; /* Even smaller font for very small screens */
+  }
+
+  .navbar-toggler {
+    margin-top: 0.6rem;
+    margin-right: 0.6rem;
+    padding: 0.6rem;
+  }
+
+  .navbar-toggler .navbar-toggler-icon {
+    width: 2rem; /* Extra small toggler */
+    height: 2rem;
+  }
+}
+
+/* home page start */
+#home-hero {
+  background: url("../img/hero-home.jpg") no-repeat center center;
+  min-height: 100vh;
+  position: relative;
+}
+
+#home-hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+/* home page start end */
