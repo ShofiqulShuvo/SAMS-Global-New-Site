@@ -229,7 +229,7 @@ footer .social-links svg {
 #home-hero {
   background: url("../img/hero-home.jpg") no-repeat center center;
   position: relative;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 #home-hero::after {
@@ -248,7 +248,7 @@ footer .social-links svg {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     color: #fff;
     z-index: 2;
     position: relative;
@@ -274,6 +274,7 @@ footer .social-links svg {
 }
 
 #home-hero .desc {
+  margin-top: 10rem;
     background: rgba(0, 0, 0, 0.4);
 }
 
@@ -398,3 +399,154 @@ footer .social-links svg {
 }
 
 /* home page start end */
+
+
+
+
+
+
+
+
+
+
+
+/* about us page */
+/* hero */
+#about-hero {
+  background: url("../img/hero-about.jpg") no-repeat center center;
+  position: relative;
+  min-height: 80vh;
+}
+
+#about-hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    
+}
+
+#about-hero .content {
+    padding-top: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    z-index: 2;
+    position: relative;
+}
+
+@media (max-width: 991px) {
+    #about-hero .content {
+        padding-top: 140px;
+    }
+}
+
+
+@media (max-width: 575px) {
+    #about-hero .content {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 400px) {
+    #about-hero .content {
+        padding-top: 80px;
+    }
+}
+
+#about-hero .sub-heading {
+  margin-top: 10rem;
+  font-size: 2.4rem;
+}
+
+/* about us page end */
+
+
+
+
+
+
+
+
+
+/* contact us page */
+/* hero */
+#contact-hero {
+  background: url("../img/hero-contact.jpg") no-repeat center center;
+  position: relative;
+  min-height: 100vh;
+}
+
+#contact-hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    
+}
+
+#contact-hero .content {
+    padding-top: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    z-index: 2;
+    position: relative;
+}
+
+@media (max-width: 991px) {
+    #contact-hero .content {
+        padding-top: 140px;
+    }
+}
+
+
+@media (max-width: 575px) {
+    #contact-hero .content {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 400px) {
+    #contact-hero .content {
+        padding-top: 80px;
+    }
+}
+
+#contact-hero .desc {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#contact-hero .desc p {
+    font-size: 1.4rem;
+}
+
+@media  screen and (max-width: 991px) {
+    #contact-hero .desc p {
+        font-size: 1.3rem;
+    }
+    
+}
+
+@media  screen and (max-width: 575px) {
+    #contact-hero .desc p {
+        font-size: 1rem;
+    }
+    
+}
+
+#contact-hero .sub-heading {
+  margin-top: 10rem;
+  font-size: 2.4rem;
+}
+
+/* about us page end */
+
