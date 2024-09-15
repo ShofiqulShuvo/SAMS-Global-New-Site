@@ -463,6 +463,72 @@ footer .social-links svg {
   font-size: 2.4rem;
 }
 
+
+/* about */
+#about .content p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #000;
+  font-weight: 500;
+}
+#about .about-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* leadership */
+#leadership .heading {
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+#leadership .single-leadership {
+  border-top-right-radius: 60px;
+  overflow: hidden;
+}
+#leadership .single-leadership .main-info {
+  position: relative;
+}
+#leadership .single-leadership .main-info img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+#leadership .single-leadership .main-info .name-deg {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+#leadership .single-leadership .linkedln-link {
+  text-decoration: none;
+  display: block;
+  background-color: #ccc;
+  color: #0a66c2;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+#leadership .single-leadership .linkedln-link i {
+  font-size: 2rem;
+}
+
+/* collaboration */
+#collaboration {
+  background-color: var(--primary--light-color);
+}
+#collaboration .single-collab {
+  width: 100%;
+  display: block;
+}
+#collaboration .single-collab img {
+  width: 100%;
+}
+
 /* about us page end */
 
 
@@ -548,71 +614,51 @@ footer .social-links svg {
   font-size: 2.4rem;
 }
 
-
-/* about */
-#about .content p {
-  font-size: 1.6rem;
-  line-height: 1.4;
+/* contact info */
+#contact-info .side-image {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  object-position: center;
+  padding-right: 1rem;
+}
+#contact-info .info .desc {
+  font-size: 1.4rem;
   color: #000;
   font-weight: 500;
 }
-#about .about-img {
+#contact-info .info .address {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+#contact-info .info .address .single-add  {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+}
+#contact-info .info .address .single-add a  {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+}
+
+#contact-info .info .address .single-add .icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+#contact-info .info .address .single-add img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
 
-/* leadership */
-#leadership .heading {
-  font-weight: 700;
-  font-size: 2.4rem;
-}
-#leadership .single-leadership {
-  border-top-right-radius: 60px;
-  overflow: hidden;
-}
-#leadership .single-leadership .main-info {
-  position: relative;
-}
-#leadership .single-leadership .main-info img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  object-position: center;
-}
-#leadership .single-leadership .main-info .name-deg {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  right: 10px;
-  color: #fff;
-  font-size: 1.4rem;
-  font-weight: 700;
-}
-#leadership .single-leadership .linkedln-link {
-  text-decoration: none;
-  display: block;
-  background-color: #ccc;
-  color: #0a66c2;
-  font-size: 1.6rem;
-  font-weight: 700;
-}
-#leadership .single-leadership .linkedln-link i {
-  font-size: 2rem;
-}
-
-/* collaboration */
-#collaboration {
-  background-color: var(--primary--light-color);
-}
-#collaboration .single-collab {
-  width: 100%;
-  display: block;
-}
-#collaboration .single-collab img {
-  width: 100%;
-}
-
-/* about us page end */
+/* contactt us page end */
 
