@@ -478,7 +478,7 @@ footer .social-links svg {
 #contact-hero {
   background: url("../img/hero-contact.jpg") no-repeat center center;
   position: relative;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 #contact-hero::after {
