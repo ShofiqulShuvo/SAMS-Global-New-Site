@@ -69,7 +69,7 @@ body {
 
 /* Brand logo smaller */
 .navbar-brand img {
-  height: 180px; /* Adjust the logo size */
+  height: 120px; /* Adjust the logo size */
 }
 
 /* Align logo and toggler to the top */
@@ -113,8 +113,8 @@ body {
 
 /* Bigger Toggler Icon */
 .navbar-toggler .navbar-toggler-icon {
-  width: 3.5rem; /* Bigger icon width */
-  height: 3.5rem; /* Bigger icon height */
+  width: 2.5rem; /* Bigger icon width */
+  height: 2.5rem; /* Bigger icon height */
   background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="white" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" d="M1 2.5h14M1 8h14M1 13.5h14"/%3E%3C/svg%3E'); /* Increased stroke width */
 }
 
@@ -215,12 +215,11 @@ footer a {
 
 footer .social-links {
   display: flex;
-  gap: .5rem;
+  gap: .75rem;
 }
 
-footer .social-links svg {
-  width: 25px;
-  height: 25px;
+footer .social-links {
+  font-size: 1.3rem;
 }
 
 /* home page start */
@@ -229,7 +228,7 @@ footer .social-links svg {
 #home-hero {
   background: url("../img/hero-home.jpg") no-repeat center center;
   position: relative;
-  min-height: 80vh;
+  /* min-height: 80vh; */
 }
 
 #home-hero::after {
@@ -244,7 +243,7 @@ footer .social-links svg {
 }
 
 #home-hero .content {
-    padding-top: 220px;
+    padding-top: 165px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -274,7 +273,7 @@ footer .social-links svg {
 }
 
 #home-hero .desc {
-  margin-top: 10rem;
+  margin-top: 15rem;
     background: rgba(0, 0, 0, 0.4);
 }
 
@@ -283,15 +282,24 @@ footer .social-links svg {
 }
 
 @media  screen and (max-width: 991px) {
+
+  #home-hero .desc {
+    margin-top: 10rem;
+  }
+
     #home-hero .desc p {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
     
 }
 
 @media  screen and (max-width: 575px) {
+    #home-hero .desc {
+      margin-top: 7rem;
+    }
+
     #home-hero .desc p {
-        font-size: 1rem;
+        font-size: .85rem;
     }
     
 }
@@ -415,7 +423,7 @@ footer .social-links svg {
 #about-hero {
   background: url("../img/hero-about.jpg") no-repeat center center;
   position: relative;
-  min-height: 80vh;
+  /* min-height: 80vh; */
 }
 
 #about-hero::after {
@@ -430,7 +438,7 @@ footer .social-links svg {
 }
 
 #about-hero .content {
-    padding-top: 220px;
+    padding-top: 160px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -459,8 +467,16 @@ footer .social-links svg {
 }
 
 #about-hero .sub-heading {
-  margin-top: 10rem;
+  margin-top: 18rem;
   font-size: 2.4rem;
+}
+
+@media screen and (max-width: 767px) {
+  #about-hero .sub-heading {
+    margin-top: 10rem;
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
 }
 
 
@@ -547,6 +563,18 @@ footer .social-links svg {
   min-height: 80vh;
 }
 
+@media screen and (max-width: 991px) {
+  #contact-hero {
+    min-height: 620px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #contact-hero {
+    min-height: 350px;
+  }
+}
+
 #contact-hero::after {
     content: "";
     position: absolute;
@@ -559,7 +587,7 @@ footer .social-links svg {
 }
 
 #contact-hero .content {
-    padding-top: 220px;
+    padding-top: 160px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -610,8 +638,12 @@ footer .social-links svg {
 }
 
 #contact-hero .sub-heading {
-  margin-top: 10rem;
+  margin-top: 15rem;
   font-size: 2.4rem;
+}
+
+@media screen and (max-width: 991px) {
+
 }
 
 /* contact info */
